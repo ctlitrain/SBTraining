@@ -1,0 +1,31 @@
+server:
+  port: 8081
+  connection-timeout: 
+    seconds: 60
+spring:
+  application:
+    name: Springboot Training RestJPA app from default yml 
+
+---
+
+spring:
+  profiles: test
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    root: INFO
+    
+---
+
+spring:
+  profiles: prod
+  jpa:
+    show-sql: false
+    
+logging:
+  level:
+    root: WARN      
+
+

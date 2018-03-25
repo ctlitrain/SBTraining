@@ -1,0 +1,979 @@
+2018-03-24 15:00:22.282 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'logging.register-shutdown-hook' in any property source
+2018-03-24 15:00:22.355 DEBUG 22596 --- [main] .c.l.ClasspathLoggingApplicationListener : Application started with classpath: [file:/C:/Users/rxmeena/workspace/SBTraining/sb-autocfg-demo/twitter4j-spring-boot-sample/target/classes/, file:/C:/Users/rxmeena/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, file:/C:/Users/rxmeena/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar, file:/C:/Users/rxmeena/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, file:/C:/Users/rxmeena/.m2/repository/org/springframework/spring-context/5.0.4.RELEASE/spring-context-5.0.4.RELEASE.jar, file:/C:/Users/rxmeena/.m2/repository/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar, file:/C:/Users/rxmeena/.m2/repository/org/twitter4j/twitter4j-core/4.0.3/twitter4j-core-4.0.3.jar, file:/C:/Users/rxmeena/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.0.RELEASE/spring-boot-autoconfigure-2.0.0.RELEASE.jar, file:/C:/Users/rxmeena/.m2/repository/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar, file:/C:/Users/rxmeena/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar, file:/C:/Users/rxmeena/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar, file:/C:/Users/rxmeena/.m2/repository/org/springframework/spring-beans/5.0.4.RELEASE/spring-beans-5.0.4.RELEASE.jar, file:/C:/Users/rxmeena/.m2/repository/com/ctl/rxmeena/twitter4j-spring-boot-autoconfigure/1.0-SNAPSHOT/twitter4j-spring-boot-autoconfigure-1.0-SNAPSHOT.jar, file:/C:/Users/rxmeena/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, file:/C:/Users/rxmeena/.m2/repository/org/springframework/spring-jcl/5.0.4.RELEASE/spring-jcl-5.0.4.RELEASE.jar, file:/C:/Users/rxmeena/.m2/repository/com/ctl/rxmeena/twitter4j-spring-boot-starter/1.0-SNAPSHOT/twitter4j-spring-boot-starter-1.0-SNAPSHOT.jar, file:/C:/Users/rxmeena/.m2/repository/org/springframework/boot/spring-boot-starter/2.0.0.RELEASE/spring-boot-starter-2.0.0.RELEASE.jar, file:/C:/Users/rxmeena/.m2/repository/org/springframework/spring-expression/5.0.4.RELEASE/spring-expression-5.0.4.RELEASE.jar, file:/C:/Users/rxmeena/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.0.0.RELEASE/spring-boot-starter-logging-2.0.0.RELEASE.jar, file:/C:/Users/rxmeena/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar, file:/C:/Users/rxmeena/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar, file:/C:/Users/rxmeena/.m2/repository/org/springframework/boot/spring-boot/2.0.0.RELEASE/spring-boot-2.0.0.RELEASE.jar]
+2018-03-24 15:00:22.355 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'context.listener.classes' in any property source
+2018-03-24 15:00:22.387 DEBUG 22596 --- [main] o.s.core.env.StandardEnvironment         : Adding PropertySource 'configurationProperties' with highest search precedence
+2018-03-24 15:00:22.387 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.beaninfo.ignore' in any property source
+2018-03-24 15:00:22.387 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.banner.image.location' in any property source
+2018-03-24 15:00:22.387 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.banner.location' in any property source
+2018-03-24 15:00:22.449 DEBUG 22596 --- [main] o.s.core.env.StandardEnvironment         : Adding PropertySource 'systemProperties' with lowest search precedence
+2018-03-24 15:00:22.449 DEBUG 22596 --- [main] o.s.core.env.StandardEnvironment         : Adding PropertySource 'systemEnvironment' with lowest search precedence
+2018-03-24 15:00:22.449 DEBUG 22596 --- [main] o.s.core.env.StandardEnvironment         : Initialized StandardEnvironment with PropertySources [MapPropertySource@2071195320 {name='systemProperties', properties={java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\bin, java.vm.version=25.92-b14, maven.multiModuleProjectDirectory=C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, guice.disable.misplaced.annotation.check=true, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=US, user.script=, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, PID=22596, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample, java.runtime.version=1.8.0_92-b14, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Windows\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 10, classworlds.conf=C:\Users\rxmeena\Softwares\apache-maven-3.5.3\bin\..\bin\m2.conf, sun.jnu.encoding=Cp1252, spring.beaninfo.ignore=true, java.library.path=C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\tibco\tibrv\8.4\bin;C:\Program Files (x86)\Serena\Dimensions\CM\prog64;C:\Program Files (x86)\Serena\Dimensions\CM\prog;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\bin;C:\Users\rxmeena\Softwares\Git\cmd;C:\Program Files\Cloud Foundry;C:\Users\rxmeena\AppData\Local\Microsoft\WindowsApps;C:\cygwin\bin;C:\Users\rxmeena\Softwares\apache-maven-3.5.3\bin;;., maven.conf=C:\Users\rxmeena\Softwares\apache-maven-3.5.3\bin\../conf, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.0, LOG_FILE=logs/spring-boot-logging-test.log, library.jansi.path=C:\Users\rxmeena\Softwares\apache-maven-3.5.3\bin\..\lib\jansi-native, user.home=C:\Users\rxmeena, user.timezone=Asia/Calcutta, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=Cp1252, java.specification.version=1.8, java.class.path=C:\Users\rxmeena\Softwares\apache-maven-3.5.3\bin\..\boot\plexus-classworlds-2.5.2.jar, user.name=rxmeena, java.vm.specification.version=1.8, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher spring-boot:run, java.home=C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre, sun.arch.data.model=64, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_92, java.ext.dirs=C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\lib\resources.jar;C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\lib\rt.jar;C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\lib\sunrsasign.jar;C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\lib\jsse.jar;C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\lib\jce.jar;C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\lib\charsets.jar;C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\lib\jfr.jar;C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\jre\classes, java.awt.headless=true, java.vendor=Oracle Corporation, sun.stderr.encoding=cp437, maven.home=C:\Users\rxmeena\Softwares\apache-maven-3.5.3\bin\.., file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.stdout.encoding=cp437, sun.desktop=windows, sun.cpu.isalist=amd64}}, SystemEnvironmentPropertySource@1673290628 {name='systemEnvironment', properties={USERDOMAIN_ROAMINGPROFILE=CTL, =U:=U:\, PROCESSOR_LEVEL=6, =Q:=Q:\, SESSIONNAME=Console, =M:=M:\, ALLUSERSPROFILE=C:\ProgramData, PROCESSOR_ARCHITECTURE=AMD64, =I:=I:\, jvmConfig=\.mvn\jvm.config, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules, SystemDrive=C:, =E:=E:\, =ExitCode=00000000, MAVEN_HOME=C:\Users\rxmeena\Softwares\apache-maven-3.5.3\bin\.., =A:=A:\, USERNAME=rxmeena, USERDNSDOMAIN=CTL.INTRANET, =Z:=Z:\, ProgramFiles(x86)=C:\Program Files (x86), WDIR=C:\, =V:=V:\, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, =R:=R:\, CLASSWORLDS_JAR="C:\Users\rxmeena\Softwares\apache-maven-3.5.3\bin\..\boot\plexus-classworlds-2.5.2.jar", =N:=N:\, =J:=J:\, HOMESHARE=\\xbanhallfil01\home, ProgramData=C:\ProgramData, =F:=F:\, ProgramW6432=C:\Program Files, HOMEPATH=\, =B:=B:\, PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 78 Stepping 3, GenuineIntel, ProgramFiles=C:\Program Files, PUBLIC=C:\Users\Public, windir=C:\WINDOWS, =::=::\, =W:=W:\, LOCALAPPDATA=C:\Users\rxmeena\AppData\Local, =S:=S:\, USERDOMAIN=CTL, LOGONSERVER=\\PKABWDOMAD502, =O:=O:\, PROMPT=$P$G, =K:=K:\, ERROR_CODE=0, EXEC_DIR=C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample, =G:=G:\, OneDrive=C:\Users\Administrator\OneDrive, =C:=C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample, APPDATA=C:\Users\rxmeena\AppData\Roaming, MAVEN_CMD_LINE_ARGS=spring-boot:run, =X:=X:\, CommonProgramFiles=C:\Program Files\Common Files, Path=c:\tibco\tibrv\8.4\bin;C:\Program Files (x86)\Serena\Dimensions\CM\prog64;C:\Program Files (x86)\Serena\Dimensions\CM\prog;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\bin;C:\Users\rxmeena\Softwares\Git\cmd;C:\Program Files\Cloud Foundry;C:\Users\rxmeena\AppData\Local\Microsoft\WindowsApps;C:\cygwin\bin;C:\Users\rxmeena\Softwares\apache-maven-3.5.3\bin;, =T:=T:\, OS=Windows_NT, COMPUTERNAME=5CG7242Q9L, =P:=P:\, JAVACMD=C:\Users\rxmeena\Softwares\JAVA\jdk1.8.0_92\bin\java.exe, MAVEN_PROJECTBASEDIR=C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample, =L:=L:\, PROCESSOR_REVISION=4e03, CLASSPATH=c:\tibco\tibrv\8.4\lib\tibrvnative.jar;, CommonProgramW6432=C:\Program Files\Common Files, ComSpec=C:\WINDOWS\system32\cmd.exe, UATDATA=C:\WINDOWS\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77, CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, SystemRoot=C:\WINDOWS, TEMP=C:\Windows\Temp, HOMEDRIVE=H:, USERPROFILE=C:\Users\rxmeena, TMP=C:\Windows\Temp, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, NUMBER_OF_PROCESSORS=4, =Y:=Y:\, HOME=C:\Users\rxmeena}}]
+2018-03-24 15:00:22.498 DEBUG 22596 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-03-24 15:00:22.513 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'context.initializer.classes' in any property source
+2018-03-24 15:00:22.513 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.application.name' in any property source
+2018-03-24 15:00:22.513 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.529  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Starting SpringbootTwitter4jDemoApplication on 5CG7242Q9L with PID 22596 (C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample\target\classes started by rxmeena in C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample)
+2018-03-24 15:00:22.529 DEBUG 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2018-03-24 15:00:22.529  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : The following profiles are active: dev
+2018-03-24 15:00:22.529 DEBUG 22596 --- [main] o.s.boot.SpringApplication               : Loading source class com.rxmeena.demo.SpringbootTwitter4jDemoApplication
+2018-03-24 15:00:22.545 DEBUG 22596 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-03-24 15:00:22.582 DEBUG 22596 --- [main] o.s.b.c.c.ConfigFileApplicationListener  : Activated profiles dev
+2018-03-24 15:00:22.582 DEBUG 22596 --- [main] o.s.b.c.c.ConfigFileApplicationListener  : Loaded config file 'file:/C:/Users/rxmeena/workspace/SBTraining/sb-autocfg-demo/twitter4j-spring-boot-sample/target/classes/application.properties' (classpath:/application.properties)
+2018-03-24 15:00:22.586 DEBUG 22596 --- [main] o.s.b.c.c.ConfigFileApplicationListener  : Loaded config file 'file:/C:/Users/rxmeena/workspace/SBTraining/sb-autocfg-demo/twitter4j-spring-boot-sample/target/classes/application-dev.properties' (classpath:/application-dev.properties) for profile dev
+2018-03-24 15:00:22.587  INFO 22596 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6e286e0d: startup date [Sat Mar 24 15:00:22 IST 2018]; root of context hierarchy
+2018-03-24 15:00:22.588 DEBUG 22596 --- [main] s.c.a.AnnotationConfigApplicationContext : Bean factory for org.springframework.context.annotation.AnnotationConfigApplicationContext@6e286e0d: org.springframework.beans.factory.support.DefaultListableBeanFactory@1a78590e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,springbootTwitter4jDemoApplication]; root of factory hierarchy
+2018-03-24 15:00:22.600 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-03-24 15:00:22.600 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-03-24 15:00:22.616 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2018-03-24 15:00:22.631 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-03-24 15:00:22.631 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-03-24 15:00:22.631 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' to allow for resolving potential circular references
+2018-03-24 15:00:22.631 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-03-24 15:00:22.654 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-03-24 15:00:22.676 DEBUG 22596 --- [main] o.s.c.a.ClassPathBeanDefinitionScanner   : JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-03-24 15:00:22.680 DEBUG 22596 --- [main] .i.s.PathMatchingResourcePatternResolver : Resolved classpath location [com/rxmeena/demo/] to resources [URL [file:/C:/Users/rxmeena/workspace/SBTraining/sb-autocfg-demo/twitter4j-spring-boot-sample/target/classes/com/rxmeena/demo/]]
+2018-03-24 15:00:22.681 DEBUG 22596 --- [main] .i.s.PathMatchingResourcePatternResolver : Looking for matching resources in directory tree [C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample\target\classes\com\rxmeena\demo]
+2018-03-24 15:00:22.683 DEBUG 22596 --- [main] .i.s.PathMatchingResourcePatternResolver : Searching directory [C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample\target\classes\com\rxmeena\demo] for files matching pattern [C:/Users/rxmeena/workspace/SBTraining/sb-autocfg-demo/twitter4j-spring-boot-sample/target/classes/com/rxmeena/demo/**/*.class]
+2018-03-24 15:00:22.687 DEBUG 22596 --- [main] .i.s.PathMatchingResourcePatternResolver : Resolved location pattern [classpath*:com/rxmeena/demo/**/*.class] to resources [file [C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample\target\classes\com\rxmeena\demo\SpringbootTwitter4jDemoApplication.class]]
+2018-03-24 15:00:22.716 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.boot.enableautoconfiguration' in any property source
+2018-03-24 15:00:22.732 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-03-24 15:00:22.748 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.778 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.801 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.messages.basename' in any property source
+2018-03-24 15:00:22.802 DEBUG 22596 --- [main] .i.s.PathMatchingResourcePatternResolver : Resolved classpath location [messages.properties] to resources []
+2018-03-24 15:00:22.803 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.824 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.840 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.840 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.855 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.855 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.855 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.871 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.871 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.871 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.871 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.871 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.871 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.871 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.871 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.871 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.871 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.887 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.893 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.895 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.896 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.897 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.899 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2018-03-24 15:00:22.899 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-03-24 15:00:22.899 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-03-24 15:00:22.915 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry' to allow for resolving potential circular references
+2018-03-24 15:00:22.915 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-03-24 15:00:22.915 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.915 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer()
+2018-03-24 15:00:22.915 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.931 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration'
+2018-03-24 15:00:22.931 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration.twitterFactory()
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration.twitter()
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration.mbeanExporter()
+2018-03-24 15:00:22.946 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-03-24 15:00:22.962 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.965 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration.objectNamingStrategy()
+2018-03-24 15:00:22.966 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-03-24 15:00:22.967 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.968 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registering bean definition for @Bean method org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration.mbeanServer()
+2018-03-24 15:00:22.968 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.970 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-03-24 15:00:22.971 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.971 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2018-03-24 15:00:22.972 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2018-03-24 15:00:22.974 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.info.git.location' in any property source
+2018-03-24 15:00:22.977 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.978 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.info.build.location:classpath:META-INF/build-info.properties' in any property source
+2018-03-24 15:00:22.979 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.info.build.location' in any property source
+2018-03-24 15:00:22.980 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'autoConfigurationReport'
+2018-03-24 15:00:22.981 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration'
+2018-03-24 15:00:22.982 DEBUG 22596 --- [main] a.ConfigurationClassBeanDefinitionReader : Registered bean definition for imported class 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2018-03-24 15:00:23.045 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced com.rxmeena.demo.SpringbootTwitter4jDemoApplication; enhanced class name is: com.rxmeena.demo.SpringbootTwitter4jDemoApplication$$EnhancerBySpringCGLIB$$c81cf579
+2018-03-24 15:00:23.045 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'springbootTwitter4jDemoApplication' existing class 'com.rxmeena.demo.SpringbootTwitter4jDemoApplication' with enhanced class 'com.rxmeena.demo.SpringbootTwitter4jDemoApplication$$EnhancerBySpringCGLIB$$c81cf579'
+2018-03-24 15:00:23.060 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration$$EnhancerBySpringCGLIB$$f18ebce0
+2018-03-24 15:00:23.060 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration$$EnhancerBySpringCGLIB$$f18ebce0'
+2018-03-24 15:00:23.060 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration; enhanced class name is: com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration$$EnhancerBySpringCGLIB$$d2e5fd
+2018-03-24 15:00:23.060 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration' existing class 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration' with enhanced class 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration$$EnhancerBySpringCGLIB$$d2e5fd'
+2018-03-24 15:00:23.079 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$7043b9c3
+2018-03-24 15:00:23.080 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration$$EnhancerBySpringCGLIB$$7043b9c3'
+2018-03-24 15:00:23.083 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration$$EnhancerBySpringCGLIB$$e061d5f5
+2018-03-24 15:00:23.084 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration$$EnhancerBySpringCGLIB$$e061d5f5'
+2018-03-24 15:00:23.100 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$2cd257c0
+2018-03-24 15:00:23.100 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$2cd257c0'
+2018-03-24 15:00:23.100 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration$$EnhancerBySpringCGLIB$$53362927
+2018-03-24 15:00:23.100 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration$$EnhancerBySpringCGLIB$$53362927'
+2018-03-24 15:00:23.100 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassEnhancer       : Successfully enhanced org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration; enhanced class name is: org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$$EnhancerBySpringCGLIB$$6404a89
+2018-03-24 15:00:23.100 DEBUG 22596 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Replacing bean definition 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration' existing class 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration' with enhanced class 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$$EnhancerBySpringCGLIB$$6404a89'
+2018-03-24 15:00:23.116 DEBUG 22596 --- [main] o.s.core.env.StandardEnvironment         : Removing PropertySource 'defaultProperties'
+2018-03-24 15:00:23.116 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2018-03-24 15:00:23.116 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'propertySourcesPlaceholderConfigurer'
+2018-03-24 15:00:23.116 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'propertySourcesPlaceholderConfigurer' to allow for resolving potential circular references
+2018-03-24 15:00:23.131 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'propertySourcesPlaceholderConfigurer'
+2018-03-24 15:00:23.131 DEBUG 22596 --- [main] o.s.core.env.MutablePropertySources      : Adding PropertySource 'environmentProperties' with lowest search precedence
+2018-03-24 15:00:23.131 DEBUG 22596 --- [main] o.s.core.env.MutablePropertySources      : Adding PropertySource 'localProperties' with lowest search precedence
+2018-03-24 15:00:23.131 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2018-03-24 15:00:23.131 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2018-03-24 15:00:23.131 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata' to allow for resolving potential circular references
+2018-03-24 15:00:23.131 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2018-03-24 15:00:23.131 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-03-24 15:00:23.131 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-03-24 15:00:23.150 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2018-03-24 15:00:23.154 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-03-24 15:00:23.154 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-03-24 15:00:23.155 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-03-24 15:00:23.155 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2018-03-24 15:00:23.160 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-03-24 15:00:23.160 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-03-24 15:00:23.162 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-03-24 15:00:23.165 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2018-03-24 15:00:23.170 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-03-24 15:00:23.171 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2018-03-24 15:00:23.171 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2018-03-24 15:00:23.173 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor' to allow for resolving potential circular references
+2018-03-24 15:00:23.177 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Invoking afterPropertiesSet() on bean with name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2018-03-24 15:00:23.178 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2018-03-24 15:00:23.180 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2018-03-24 15:00:23.183 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2018-03-24 15:00:23.184 DEBUG 22596 --- [main] s.c.a.AnnotationConfigApplicationContext : Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@79f92fe]
+2018-03-24 15:00:23.184 DEBUG 22596 --- [main] s.c.a.AnnotationConfigApplicationContext : Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@4c4c4d93]
+2018-03-24 15:00:23.186 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a78590e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,springbootTwitter4jDemoApplication,org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory,org.springframework.boot.autoconfigure.AutoConfigurationPackages,org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration,org.springframework.boot.autoconfigure.condition.BeanTypeRegistry,propertySourcesPlaceholderConfigurer,com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration,twitterFactory,twitter,twitter4j-com.rxmeena.spring.boot.autoconfigure.Twitter4jProperties,org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor,org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata,org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration,mbeanExporter,objectNamingStrategy,mbeanServer,org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration,org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration,spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties,org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration,spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties,org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration,server-org.springframework.boot.autoconfigure.web.ServerProperties]; root of factory hierarchy
+2018-03-24 15:00:23.194 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-03-24 15:00:23.195 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-03-24 15:00:23.195 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-03-24 15:00:23.195 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-03-24 15:00:23.196 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-03-24 15:00:23.196 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-03-24 15:00:23.201 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2018-03-24 15:00:23.203 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-03-24 15:00:23.204 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-03-24 15:00:23.206 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-03-24 15:00:23.206 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2018-03-24 15:00:23.208 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-03-24 15:00:23.209 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'springbootTwitter4jDemoApplication'
+2018-03-24 15:00:23.209 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'springbootTwitter4jDemoApplication'
+2018-03-24 15:00:23.212 DEBUG 22596 --- [main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.rxmeena.demo.SpringbootTwitter4jDemoApplication$$EnhancerBySpringCGLIB$$c81cf579]: AutowiredFieldElement for private twitter4j.Twitter com.rxmeena.demo.SpringbootTwitter4jDemoApplication.twitter
+2018-03-24 15:00:23.213 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'springbootTwitter4jDemoApplication' to allow for resolving potential circular references
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'springbootTwitter4jDemoApplication': AutowiredFieldElement for private twitter4j.Twitter com.rxmeena.demo.SpringbootTwitter4jDemoApplication.twitter
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.core.annotation.AnnotationUtils      : Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.NullPointerException
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'twitter'
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'twitter'
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration'
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration'
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration$$EnhancerBySpringCGLIB$$d2e5fd]: AutowiredFieldElement for private com.rxmeena.spring.boot.autoconfigure.Twitter4jProperties com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration.properties
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration' to allow for resolving potential circular references
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration': AutowiredFieldElement for private com.rxmeena.spring.boot.autoconfigure.Twitter4jProperties com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration.properties
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.core.annotation.AnnotationUtils      : Failed to meta-introspect annotation [interface org.springframework.beans.factory.annotation.Autowired]: java.lang.NullPointerException
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'twitter4j-com.rxmeena.spring.boot.autoconfigure.Twitter4jProperties'
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'twitter4j-com.rxmeena.spring.boot.autoconfigure.Twitter4jProperties'
+2018-03-24 15:00:23.216 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'twitter4j-com.rxmeena.spring.boot.autoconfigure.Twitter4jProperties' to allow for resolving potential circular references
+2018-03-24 15:00:23.232 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory'
+2018-03-24 15:00:23.232 DEBUG 22596 --- [main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory]: AutowiredMethodElement for public void org.springframework.boot.context.properties.ConversionServiceDeducer$Factory.setConverters(java.util.List)
+2018-03-24 15:00:23.232 DEBUG 22596 --- [main] o.s.b.f.annotation.InjectionMetadata     : Registered injected element on class [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory]: AutowiredMethodElement for public void org.springframework.boot.context.properties.ConversionServiceDeducer$Factory.setGenericConverters(java.util.List)
+2018-03-24 15:00:23.232 DEBUG 22596 --- [main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory': AutowiredMethodElement for public void org.springframework.boot.context.properties.ConversionServiceDeducer$Factory.setConverters(java.util.List)
+2018-03-24 15:00:23.232 DEBUG 22596 --- [main] o.s.b.f.annotation.InjectionMetadata     : Processing injected element of bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory': AutowiredMethodElement for public void org.springframework.boot.context.properties.ConversionServiceDeducer$Factory.setGenericConverters(java.util.List)
+2018-03-24 15:00:23.232 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory'
+2018-03-24 15:00:23.248 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'twitter4j-com.rxmeena.spring.boot.autoconfigure.Twitter4jProperties'
+2018-03-24 15:00:23.248 DEBUG 22596 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowiring by type from bean name 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration' to bean named 'twitter4j-com.rxmeena.spring.boot.autoconfigure.Twitter4jProperties'
+2018-03-24 15:00:23.248 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration'
+2018-03-24 15:00:23.263 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'twitterFactory'
+2018-03-24 15:00:23.263 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'twitterFactory'
+2018-03-24 15:00:23.263 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration'
+2018-03-24 15:00:23.307 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'twitterFactory' to allow for resolving potential circular references
+2018-03-24 15:00:23.309 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'twitterFactory'
+2018-03-24 15:00:23.309 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'twitter' via factory method to bean named 'twitterFactory'
+2018-03-24 15:00:23.309 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'twitter' to allow for resolving potential circular references
+2018-03-24 15:00:23.324 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'twitter'
+2018-03-24 15:00:23.324 DEBUG 22596 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowiring by type from bean name 'springbootTwitter4jDemoApplication' to bean named 'twitter'
+2018-03-24 15:00:23.324 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'springbootTwitter4jDemoApplication'
+2018-03-24 15:00:23.324 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-03-24 15:00:23.324 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2018-03-24 15:00:23.324 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages' to allow for resolving potential circular references
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration' to allow for resolving potential circular references
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'twitterFactory'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'twitter'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'twitter4j-com.rxmeena.spring.boot.autoconfigure.Twitter4jProperties'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-03-24 15:00:23.340 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' to allow for resolving potential circular references
+2018-03-24 15:00:23.356 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-03-24 15:00:23.356 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mbeanExporter'
+2018-03-24 15:00:23.356 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'mbeanExporter'
+2018-03-24 15:00:23.356 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-03-24 15:00:23.356 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'objectNamingStrategy'
+2018-03-24 15:00:23.356 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'objectNamingStrategy'
+2018-03-24 15:00:23.356 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-03-24 15:00:23.356 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.jmx.default-domain' in any property source
+2018-03-24 15:00:23.356 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'objectNamingStrategy' to allow for resolving potential circular references
+2018-03-24 15:00:23.371 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Invoking afterPropertiesSet() on bean with name 'objectNamingStrategy'
+2018-03-24 15:00:23.371 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'objectNamingStrategy'
+2018-03-24 15:00:23.371 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+2018-03-24 15:00:23.371 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.jmx.server' in any property source
+2018-03-24 15:00:23.371 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mbeanServer'
+2018-03-24 15:00:23.371 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'mbeanServer'
+2018-03-24 15:00:23.371 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+2018-03-24 15:00:23.402 DEBUG 22596 --- [main] o.springframework.jmx.support.JmxUtils   : Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@4c65df61
+2018-03-24 15:00:23.418 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'mbeanServer' to allow for resolving potential circular references
+2018-03-24 15:00:23.418 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'mbeanServer'
+2018-03-24 15:00:23.418 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'mbeanExporter' to allow for resolving potential circular references
+2018-03-24 15:00:23.418 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Invoking afterPropertiesSet() on bean with name 'mbeanExporter'
+2018-03-24 15:00:23.418 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'mbeanExporter'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'objectNamingStrategy'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'mbeanServer'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration' to allow for resolving potential circular references
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$2cd257c0] - unable to determine constructor/method parameter names
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties' to allow for resolving potential circular references
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2018-03-24 15:00:23.434 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2018-03-24 15:00:23.449 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' to allow for resolving potential circular references
+2018-03-24 15:00:23.449 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2018-03-24 15:00:23.449 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2018-03-24 15:00:23.449 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration'
+2018-03-24 15:00:23.449 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration'
+2018-03-24 15:00:23.449 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration' to allow for resolving potential circular references
+2018-03-24 15:00:23.449 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration'
+2018-03-24 15:00:23.449 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2018-03-24 15:00:23.449 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2018-03-24 15:00:23.649 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties' to allow for resolving potential circular references
+2018-03-24 15:00:23.652 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2018-03-24 15:00:23.652 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2018-03-24 15:00:23.653 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2018-03-24 15:00:23.653 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration' to allow for resolving potential circular references
+2018-03-24 15:00:23.656 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2018-03-24 15:00:23.656 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2018-03-24 15:00:23.657 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Creating instance of bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2018-03-24 15:00:23.661 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Eagerly caching bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' to allow for resolving potential circular references
+2018-03-24 15:00:23.664 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Finished creating instance of bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2018-03-24 15:00:23.666 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-03-24 15:00:23.695  INFO 22596 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 15:00:23.696 DEBUG 22596 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Autodetecting user-defined JMX MBeans
+2018-03-24 15:00:23.701 DEBUG 22596 --- [main] s.c.a.AnnotationConfigApplicationContext : Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@68ef0c07]
+2018-03-24 15:00:23.702 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-03-24 15:00:23.709 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2018-03-24 15:00:23.716 DEBUG 22596 --- [main] ConditionEvaluationReportLoggingListener : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   JmxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   JmxAutoConfiguration#mbeanExporter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.MBeanExporter; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#mbeanServer matched:
+      - @ConditionalOnMissingBean (types: javax.management.MBeanServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#objectNamingStrategy matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.naming.ObjectNamingStrategy; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   RedisCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration automatic cache type (CacheCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+   Twitter4jAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'twitter4j.TwitterFactory', 'twitter4j.Twitter'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   Twitter4jAutoConfiguration#twitter matched:
+      - @ConditionalOnMissingBean (types: twitter4j.Twitter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   Twitter4jAutoConfiguration#twitterFactory matched:
+      - @ConditionalOnMissingBean (types: twitter4j.TwitterFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.jms.ConnectionFactory', 'org.apache.activemq.ActiveMQConnectionFactory' (OnClassCondition)
+
+   AopAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.aspectj.lang.annotation.Aspect', 'org.aspectj.lang.reflect.Advice', 'org.aspectj.weaver.AnnotatedElement' (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.jms.ConnectionFactory', 'org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory' (OnClassCondition)
+
+   BatchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.batch.core.launch.JobLauncher', 'org.springframework.jdbc.core.JdbcOperations' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager'; @ConditionalOnMissingClass did not find unwanted class (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerJpaDependencyConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.github.benmanes.caffeine.cache.Caffeine', 'org.springframework.cache.caffeine.CaffeineCacheManager' (OnClassCondition)
+
+   CassandraAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Cluster' (OnClassCondition)
+
+   CassandraDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.datastax.driver.core.Cluster', 'org.springframework.data.cassandra.core.CassandraAdminOperations' (OnClassCondition)
+
+   CassandraReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.datastax.driver.core.Cluster', 'org.springframework.data.cassandra.core.ReactiveCassandraTemplate', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   CassandraReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.data.cassandra.ReactiveSession', 'org.springframework.data.cassandra.repository.ReactiveCassandraRepository' (OnClassCondition)
+
+   CassandraRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.datastax.driver.core.Session', 'org.springframework.data.cassandra.repository.CassandraRepository' (OnClassCondition)
+
+   CloudAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cloud.config.java.CloudScanConfiguration' (OnClassCondition)
+
+   CodecsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.codec.CodecConfigurer' (OnClassCondition)
+
+   CouchbaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.CouchbaseBucket', 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'com.couchbase.client.spring.cache.CouchbaseCacheManager' (OnClassCondition)
+
+   CouchbaseDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'org.springframework.data.couchbase.repository.CouchbaseRepository' (OnClassCondition)
+
+   CouchbaseReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'org.springframework.data.couchbase.repository.ReactiveCouchbaseRepository', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   CouchbaseReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'org.springframework.data.couchbase.repository.ReactiveCouchbaseRepository', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   CouchbaseRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'org.springframework.data.couchbase.repository.CouchbaseRepository' (OnClassCondition)
+
+   DataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   DispatcherServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   EhCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'net.sf.ehcache.Cache', 'org.springframework.cache.ehcache.EhCacheCacheManager' (OnClassCondition)
+
+   ElasticsearchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.elasticsearch.client.Client', 'org.springframework.data.elasticsearch.client.TransportClientFactoryBean' (OnClassCondition)
+
+   ElasticsearchDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.elasticsearch.client.Client', 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' (OnClassCondition)
+
+   ElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.elasticsearch.client.Client', 'org.springframework.data.elasticsearch.repository.ElasticsearchRepository' (OnClassCondition)
+
+   EmbeddedLdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.unboundid.ldap.listener.InMemoryDirectoryServer' (OnClassCondition)
+
+   EmbeddedMongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.MongoClient', 'de.flapdoodle.embed.mongo.MongodStarter' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.JettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.webapp.WebAppContext' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.TomcatWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.UndertowWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   ErrorMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+
+   ErrorWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'freemarker.template.Configuration', 'org.springframework.ui.freemarker.FreeMarkerConfigurationFactory' (OnClassCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.h2.server.web.WebServlet' (OnClassCondition)
+
+   HazelcastAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.hazelcast.core.HazelcastInstance', 'com.hazelcast.spring.cache.HazelcastCacheManager' (OnClassCondition)
+
+   HazelcastJpaDependencyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.hazelcast.core.HazelcastInstance', 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+
+   HibernateJpaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean', 'javax.persistence.EntityManager' (OnClassCondition)
+
+   HttpEncodingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+
+   HttpHandlerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.web.reactive.DispatcherHandler', 'org.springframework.http.server.reactive.HttpHandler' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.hateoas.Resource', 'org.springframework.web.bind.annotation.RequestMapping', 'org.springframework.plugin.core.Plugin' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   InfluxDbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.influxdb.InfluxDB' (OnClassCondition)
+
+   IntegrationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.integration.config.EnableIntegration' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.cache.Caching', 'org.springframework.cache.jcache.JCacheCacheManager' (OnClassCondition)
+
+   JacksonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   JdbcTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+
+   JerseyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.glassfish.jersey.server.spring.SpringComponentProvider', 'javax.servlet.ServletRegistration' (OnClassCondition)
+
+   JestAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.searchbox.client.JestClient' (OnClassCondition)
+
+   JmsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.jms.Message', 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiConnectionFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   JooqAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.jooq.DSLContext' (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+
+   JsonbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.json.bind.Jsonb' (OnClassCondition)
+
+   JtaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.transaction.Transaction' (OnClassCondition)
+
+   KafkaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.kafka.core.KafkaTemplate' (OnClassCondition)
+
+   LdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ldap.core.ContextSource' (OnClassCondition)
+
+   LdapDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LdapRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'liquibase.integration.spring.SpringLiquibase', 'liquibase.change.DatabaseChange' (OnClassCondition)
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.mail.internet.MimeMessage' (OnClassCondition)
+
+   MailSenderValidatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.mail.test-connection) did not find property 'test-connection' (OnPropertyCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClient' (OnClassCondition)
+
+   MongoDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.MongoClient', 'org.springframework.data.mongodb.core.MongoTemplate' (OnClassCondition)
+
+   MongoReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.reactivestreams.client.MongoClient', 'org.springframework.data.mongodb.core.ReactiveMongoTemplate' (OnClassCondition)
+
+   MongoReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.reactivestreams.client.MongoClient', 'org.springframework.data.mongodb.repository.ReactiveMongoRepository' (OnClassCondition)
+
+   MongoRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.mongodb.MongoClient', 'org.springframework.data.mongodb.repository.MongoRepository' (OnClassCondition)
+
+   MultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'javax.servlet.MultipartConfigElement' (OnClassCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+   Neo4jDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.neo4j.ogm.session.SessionFactory', 'org.springframework.data.neo4j.transaction.Neo4jTransactionManager', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   Neo4jRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.neo4j.ogm.session.Neo4jSession', 'org.springframework.data.neo4j.repository.Neo4jRepository' (OnClassCondition)
+
+   OAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity', 'org.springframework.security.oauth2.client.registration.ClientRegistration' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   QuartzAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.quartz.Scheduler', 'org.springframework.scheduling.quartz.SchedulerFactoryBean', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   RabbitAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.amqp.rabbit.core.RabbitTemplate', 'com.rabbitmq.client.Channel' (OnClassCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+
+   ReactiveWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.http.ReactiveHttpInputMessage' (OnClassCondition)
+
+   ReactorCoreAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'reactor.core.publisher.Mono', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RedisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.core.RedisOperations' (OnClassCondition)
+
+   RedisReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.data.redis.connection.ReactiveRedisConnectionFactory', 'org.springframework.data.redis.core.ReactiveRedisTemplate', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RedisRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+
+   RepositoryRestMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' (OnClassCondition)
+
+   RestTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+
+   SecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityFilterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer', 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+
+   SendGridAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.sendgrid.SendGrid' (OnClassCondition)
+
+   ServletWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.servlet.ServletRequest' (OnClassCondition)
+
+   SessionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+   SolrAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.apache.solr.client.solrj.impl.HttpSolrClient', 'org.apache.solr.client.solrj.impl.CloudSolrClient' (OnClassCondition)
+
+   SolrRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.apache.solr.client.solrj.SolrClient', 'org.springframework.data.solr.repository.SolrRepository' (OnClassCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.application.admin.enabled=true) did not find property 'enabled' (OnPropertyCondition)
+
+   SpringDataWebAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.data.web.PageableHandlerMethodArgumentResolver', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+
+   ThymeleafAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.thymeleaf.templatemode.TemplateMode' (OnClassCondition)
+
+   TransactionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+   ValidationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.validation.executable.ExecutableValidator' (OnClassCondition)
+
+   WebClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   WebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   WebFluxSecurityConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity', 'org.springframework.security.web.server.WebFilterChainProxy' (OnClassCondition)
+
+   WebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+
+   WebServicesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
+
+   WebSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
+
+   WebSocketReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.servlet.Servlet', 'javax.websocket.server.ServerContainer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.servlet.Servlet', 'javax.websocket.server.ServerContainer' (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.transaction.TransactionManager', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+2018-03-24 15:00:24.044 DEBUG 22596 --- [main] o.s.c.e.PropertySourcesPropertyResolver  : Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+2018-03-24 15:00:24.044  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Started SpringbootTwitter4jDemoApplication in 2.412 seconds (JVM running for 22.699)
+2018-03-24 15:00:24.060 DEBUG 22596 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'springbootTwitter4jDemoApplication'
+2018-03-24 15:00:24.060  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Get home timeline
+2018-03-24 15:00:24.234 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : Request: 
+2018-03-24 15:00:24.234 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : GET https://api.twitter.com/1.1/statuses/home_timeline.json?include_my_retweet=true&include_entities=true
+2018-03-24 15:00:24.250 DEBUG 22596 --- [main] twitter4j.auth.OAuthAuthorization        : OAuth base string: GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fhome_timeline.json&include_entities%3Dtrue%26include_my_retweet%3Dtrue%26oauth_consumer_key%3DqMxtiAspp2zq4EfyWWriYa9Wr%26oauth_nonce%3D2675534392%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1521883824%26oauth_token%3D34690209-Zc0P386YoEXgTN59oN8IeyQYwox17l3DcDw1ZUHpn%26oauth_version%3D1.0
+2018-03-24 15:00:24.355 DEBUG 22596 --- [main] twitter4j.auth.OAuthAuthorization        : OAuth signature: 8wKRuWG1PofEglXBtw6J9U4UC5M=
+2018-03-24 15:00:24.355 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : Authorization: ***********************************************************************************************************************************************************************************************************************************************************************************
+2018-03-24 15:00:24.355 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : X-Twitter-Client-Version: 4.0.3
+2018-03-24 15:00:24.355 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : X-Twitter-Client-URL: http://twitter4j.org/en/twitter4j-4.0.3.xml
+2018-03-24 15:00:24.355 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : X-Twitter-Client: Twitter4J
+2018-03-24 15:00:24.370 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : User-Agent: twitter4j http://twitter4j.org/ /4.0.3
+2018-03-24 15:00:24.370 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : Accept-Encoding: gzip
+2018-03-24 15:00:25.324 DEBUG 22596 --- [main] s.n.www.protocol.http.HttpURLConnection  : sun.net.www.MessageHeader@99cb43710 pairs: {GET /1.1/statuses/home_timeline.json?include_my_retweet=true&include_entities=true HTTP/1.1: null}{Authorization: OAuth oauth_consumer_key="qMxtiAspp2zq4EfyWWriYa9Wr",oauth_signature_method="HMAC-SHA1",oauth_timestamp="1521883824",oauth_nonce="2675534392",oauth_version="1.0",oauth_token="34690209-Zc0P386YoEXgTN59oN8IeyQYwox17l3DcDw1ZUHpn",oauth_signature="8wKRuWG1PofEglXBtw6J9U4UC5M%3D"}{X-Twitter-Client-Version: 4.0.3}{X-Twitter-Client-URL: http://twitter4j.org/en/twitter4j-4.0.3.xml}{X-Twitter-Client: Twitter4J}{User-Agent: twitter4j http://twitter4j.org/ /4.0.3}{Accept-Encoding: gzip}{Host: api.twitter.com}{Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2}{Connection: keep-alive}
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] s.n.www.protocol.http.HttpURLConnection  : sun.net.www.MessageHeader@27ace3027 pairs: {null: HTTP/1.1 200 OK}{cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0}{content-disposition: attachment; filename=json.json}{content-encoding: gzip}{content-length: 5660}{content-type: application/json;charset=utf-8}{date: Sat, 24 Mar 2018 09:30:26 GMT}{expires: Tue, 31 Mar 1981 05:00:00 GMT}{last-modified: Sat, 24 Mar 2018 09:30:26 GMT}{pragma: no-cache}{server: tsa_k}{set-cookie: personalization_id="v1_cktg3CcpbsQK67pLCAKaTg=="; Expires=Mon, 23 Mar 2020 09:30:26 UTC; Path=/; Domain=.twitter.com}{set-cookie: lang=en; Path=/}{set-cookie: guest_id=v1%3A152188382609328474; Expires=Mon, 23 Mar 2020 09:30:26 UTC; Path=/; Domain=.twitter.com}{status: 200 OK}{strict-transport-security: max-age=631138519}{x-access-level: read-write}{x-connection-hash: 033f3ec4cdb0e2fadeecc4d0896d6d18}{x-content-type-options: nosniff}{x-frame-options: SAMEORIGIN}{x-rate-limit-limit: 15}{x-rate-limit-remaining: 13}{x-rate-limit-reset: 1521884588}{x-response-time: 260}{x-transaction: 009db361002eb318}{x-twitter-response-tags: BouncerCompliant}{x-xss-protection: 1; mode=block; report=https://twitter.com/i/xss_report}
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : Response: 
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : date: Sat, 24 Mar 2018 09:30:26 GMT
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : HTTP/1.1 200 OK
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : server: tsa_k
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : content-length: 5660
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : expires: Tue, 31 Mar 1981 05:00:00 GMT
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-response-time: 260
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-frame-options: SAMEORIGIN
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : content-encoding: gzip
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-transaction: 009db361002eb318
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : set-cookie: guest_id=v1%3A152188382609328474; Expires=Mon, 23 Mar 2020 09:30:26 UTC; Path=/; Domain=.twitter.com
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : set-cookie: lang=en; Path=/
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : set-cookie: personalization_id="v1_cktg3CcpbsQK67pLCAKaTg=="; Expires=Mon, 23 Mar 2020 09:30:26 UTC; Path=/; Domain=.twitter.com
+2018-03-24 15:00:25.824 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : last-modified: Sat, 24 Mar 2018 09:30:26 GMT
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : content-disposition: attachment; filename=json.json
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-connection-hash: 033f3ec4cdb0e2fadeecc4d0896d6d18
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-twitter-response-tags: BouncerCompliant
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : content-type: application/json;charset=utf-8
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : cache-control: no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-rate-limit-reset: 1521884588
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-rate-limit-remaining: 13
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-rate-limit-limit: 15
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : strict-transport-security: max-age=631138519
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : pragma: no-cache
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-xss-protection: 1; mode=block; report=https://twitter.com/i/xss_report
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-content-type-options: nosniff
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : x-access-level: read-write
+2018-03-24 15:00:25.840 DEBUG 22596 --- [main] twitter4j.HttpClientImpl                 : status: 200 OK
+2018-03-24 15:00:25.855 DEBUG 22596 --- [main] twitter4j.HttpResponseImpl               : [{"possibly_sensitive_appealable":false,"extended_entities":{"media":[{"display_url":"pic.twitter.com/8kXXaDG7eL","indices":[27,50],"sizes":{"small":{"w":680,"h":680,"resize":"fit"},"large":{"w":1600,"h":1600,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":1200,"h":1200,"resize":"fit"}},"id_str":"977461109958565888","expanded_url":"https://twitter.com/richardquest/status/977461144993652736/photo/1","media_url_https":"https://pbs.twimg.com/media/DZCjs2DW4AA0_rI.jpg","id":977461109958565888,"type":"photo","media_url":"http://pbs.twimg.com/media/DZCjs2DW4AA0_rI.jpg","url":"https://t.co/8kXXaDG7eL"}]},"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Sat Mar 24 08:24:31 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone<\/a>","retweet_count":12,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"977461144993652736","in_reply_to_user_id":null,"favorite_count":97,"id":977461144993652736,"text":"Met some new friends today https://t.co/8kXXaDG7eL","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":false,"entities":{"urls":[],"hashtags":[],"media":[{"display_url":"pic.twitter.com/8kXXaDG7eL","indices":[27,50],"sizes":{"small":{"w":680,"h":680,"resize":"fit"},"large":{"w":1600,"h":1600,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":1200,"h":1200,"resize":"fit"}},"id_str":"977461109958565888","expanded_url":"https://twitter.com/richardquest/status/977461144993652736/photo/1","media_url_https":"https://pbs.twimg.com/media/DZCjs2DW4AA0_rI.jpg","id":977461109958565888,"type":"photo","media_url":"http://pbs.twimg.com/media/DZCjs2DW4AA0_rI.jpg","url":"https://t.co/8kXXaDG7eL"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":0,"friends_count":3485,"profile_image_url_https":"https://pbs.twimg.com/profile_images/378800000601015536/4c299dd05d3c6fd7208e18dbd7d824c4_normal.jpeg","listed_count":3631,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000095097015/f1434985f96989320dd9ebffa21f0220.jpeg","default_profile_image":false,"favourites_count":22,"description":"Richard Quest, presenter of @questcnn - broadcast nightly LIVE from New York after the NYSE closing bell. Watch on CNN at 2100 London/2200 CET","created_at":"Fri Oct 10 10:12:37 +0000 2008","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000095097015/f1434985f96989320dd9ebffa21f0220.jpeg","protected":false,"screen_name":"richardquest","id_str":"16681542","profile_link_color":"009999","is_translation_enabled":false,"translator_type":"none","id":16681542,"geo_enabled":false,"profile_background_color":"131516","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":true,"profile_image_url":"http://pbs.twimg.com/profile_images/378800000601015536/4c299dd05d3c6fd7208e18dbd7d824c4_normal.jpeg","time_zone":"London","url":"https://t.co/XeNjTrQYir","contributors_enabled":false,"profile_background_tile":false,"entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"cnn.com/profiles/richa\u2026","indices":[0,23],"expanded_url":"http://www.cnn.com/profiles/richard-quest-profile","url":"https://t.co/XeNjTrQYir"}]}},"statuses_count":10515,"follow_request_sent":false,"followers_count":391394,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Richard Quest","location":"Worldwide","profile_sidebar_fill_color":"DDEEF6","notifications":false}},{"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"coordinates":null,"created_at":"Sat Mar 24 08:23:42 +0000 2018","truncated":false,"in_reply_to_user_id_str":null,"source":"<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone<\/a>","retweet_count":3,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"entities":{"urls":[],"hashtags":[],"user_mentions":[{"indices":[3,10],"screen_name":"Qantas","id_str":"218730857","name":"Qantas","id":218730857}],"symbols":[]},"id_str":"977460938826711040","in_reply_to_user_id":null,"favorite_count":25,"id":977460938826711040,"text":"So @Qantas is doing huge amounts of research into wellness on Ultra long haul.","place":null,"contributors":null,"lang":"en","user":{"utc_offset":0,"friends_count":3485,"profile_image_url_https":"https://pbs.twimg.com/profile_images/378800000601015536/4c299dd05d3c6fd7208e18dbd7d824c4_normal.jpeg","listed_count":3631,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000095097015/f1434985f96989320dd9ebffa21f0220.jpeg","default_profile_image":false,"favourites_count":22,"description":"Richard Quest, presenter of @questcnn - broadcast nightly LIVE from New York after the NYSE closing bell. Watch on CNN at 2100 London/2200 CET","created_at":"Fri Oct 10 10:12:37 +0000 2008","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000095097015/f1434985f96989320dd9ebffa21f0220.jpeg","protected":false,"screen_name":"richardquest","id_str":"16681542","profile_link_color":"009999","is_translation_enabled":false,"translator_type":"none","id":16681542,"geo_enabled":false,"profile_background_color":"131516","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":true,"profile_image_url":"http://pbs.twimg.com/profile_images/378800000601015536/4c299dd05d3c6fd7208e18dbd7d824c4_normal.jpeg","time_zone":"London","url":"https://t.co/XeNjTrQYir","contributors_enabled":false,"profile_background_tile":false,"entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"cnn.com/profiles/richa\u2026","indices":[0,23],"expanded_url":"http://www.cnn.com/profiles/richard-quest-profile","url":"https://t.co/XeNjTrQYir"}]}},"statuses_count":10515,"follow_request_sent":false,"followers_count":391394,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Richard Quest","location":"Worldwide","profile_sidebar_fill_color":"DDEEF6","notifications":false},"favorited":false},{"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"coordinates":null,"created_at":"Sat Mar 24 08:22:54 +0000 2018","truncated":false,"in_reply_to_user_id_str":null,"source":"<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone<\/a>","retweet_count":4,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"entities":{"urls":[],"hashtags":[],"user_mentions":[],"symbols":[]},"id_str":"977460737244311552","in_reply_to_user_id":null,"favorite_count":25,"id":977460737244311552,"text":"Being kinder to our bodies and eating better before these ultra long hails is important to feel well during and after flight.","place":null,"contributors":null,"lang":"en","user":{"utc_offset":0,"friends_count":3485,"profile_image_url_https":"https://pbs.twimg.com/profile_images/378800000601015536/4c299dd05d3c6fd7208e18dbd7d824c4_normal.jpeg","listed_count":3631,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000095097015/f1434985f96989320dd9ebffa21f0220.jpeg","default_profile_image":false,"favourites_count":22,"description":"Richard Quest, presenter of @questcnn - broadcast nightly LIVE from New York after the NYSE closing bell. Watch on CNN at 2100 London/2200 CET","created_at":"Fri Oct 10 10:12:37 +0000 2008","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000095097015/f1434985f96989320dd9ebffa21f0220.jpeg","protected":false,"screen_name":"richardquest","id_str":"16681542","profile_link_color":"009999","is_translation_enabled":false,"translator_type":"none","id":16681542,"geo_enabled":false,"profile_background_color":"131516","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":true,"profile_image_url":"http://pbs.twimg.com/profile_images/378800000601015536/4c299dd05d3c6fd7208e18dbd7d824c4_normal.jpeg","time_zone":"London","url":"https://t.co/XeNjTrQYir","contributors_enabled":false,"profile_background_tile":false,"entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"cnn.com/profiles/richa\u2026","indices":[0,23],"expanded_url":"http://www.cnn.com/profiles/richard-quest-profile","url":"https://t.co/XeNjTrQYir"}]}},"statuses_count":10515,"follow_request_sent":false,"followers_count":391394,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Richard Quest","location":"Worldwide","profile_sidebar_fill_color":"DDEEF6","notifications":false},"favorited":false},{"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"coordinates":null,"created_at":"Sat Mar 24 08:21:42 +0000 2018","truncated":false,"in_reply_to_user_id_str":null,"source":"<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone<\/a>","retweet_count":5,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"entities":{"urls":[],"hashtags":[],"user_mentions":[],"symbols":[]},"id_str":"977460435787173888","in_reply_to_user_id":null,"favorite_count":39,"id":977460435787173888,"text":"The flight is 17 hrs. Just doing a stretch class they provide in the lounge","place":null,"contributors":null,"lang":"en","user":{"utc_offset":0,"friends_count":3485,"profile_image_url_https":"https://pbs.twimg.com/profile_images/378800000601015536/4c299dd05d3c6fd7208e18dbd7d824c4_normal.jpeg","listed_count":3631,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000095097015/f1434985f96989320dd9ebffa21f0220.jpeg","default_profile_image":false,"favourites_count":22,"description":"Richard Quest, presenter of @questcnn - broadcast nightly LIVE from New York after the NYSE closing bell. Watch on CNN at 2100 London/2200 CET","created_at":"Fri Oct 10 10:12:37 +0000 2008","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000095097015/f1434985f96989320dd9ebffa21f0220.jpeg","protected":false,"screen_name":"richardquest","id_str":"16681542","profile_link_color":"009999","is_translation_enabled":false,"translator_type":"none","id":16681542,"geo_enabled":false,"profile_background_color":"131516","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":true,"profile_image_url":"http://pbs.twimg.com/profile_images/378800000601015536/4c299dd05d3c6fd7208e18dbd7d824c4_normal.jpeg","time_zone":"London","url":"https://t.co/XeNjTrQYir","contributors_enabled":false,"profile_background_tile":false,"entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"cnn.com/profiles/richa\u2026","indices":[0,23],"expanded_url":"http://www.cnn.com/profiles/richard-quest-profile","url":"https://t.co/XeNjTrQYir"}]}},"statuses_count":10515,"follow_request_sent":false,"followers_count":391394,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Richard Quest","location":"Worldwide","profile_sidebar_fill_color":"DDEEF6","notifications":false},"favorited":false},{"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"coordinates":null,"created_at":"Sat Mar 24 07:59:33 +0000 2018","truncated":false,"in_reply_to_user_id_str":null,"source":"<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone<\/a>","retweet_count":10,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"entities":{"urls":[],"hashtags":[],"user_mentions":[{"indices":[41,48],"screen_name":"Qantas","id_str":"218730857","name":"Qantas","id":218730857}],"symbols":[]},"id_str":"977454858453311489","in_reply_to_user_id":null,"favorite_count":82,"id":977454858453311489,"text":"Now at Perth airport about to board QF 9 @Qantas nonstop to London. first a stretching and yoga class to help us relax!","place":null,"contributors":null,"lang":"en","user":{"utc_offset":0,"friends_count":3485,"profile_image_url_https":"https://pbs.twimg.com/profile_images/378800000601015536/4c299dd05d3c6fd7208e18dbd7d824c4_normal.jpeg","listed_count":3631,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000095097015/f1434985f96989320dd9ebffa21f0220.jpeg","default_profile_image":false,"favourites_count":22,"description":"Richard Quest, presenter of @questcnn - broadcast nightly LIVE from New York after the NYSE closing bell. Watch on CNN at 2100 London/2200 CET","created_at":"Fri Oct 10 10:12:37 +0000 2008","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000095097015/f1434985f96989320dd9ebffa21f0220.jpeg","protected":false,"screen_name":"richardquest","id_str":"16681542","profile_link_color":"009999","is_translation_enabled":false,"translator_type":"none","id":16681542,"geo_enabled":false,"profile_background_color":"131516","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":true,"profile_image_url":"http://pbs.twimg.com/profile_images/378800000601015536/4c299dd05d3c6fd7208e18dbd7d824c4_normal.jpeg","time_zone":"London","url":"https://t.co/XeNjTrQYir","contributors_enabled":false,"profile_background_tile":false,"entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"cnn.com/profiles/richa\u2026","indices":[0,23],"expanded_url":"http://www.cnn.com/profiles/richard-quest-profile","url":"https://t.co/XeNjTrQYir"}]}},"statuses_count":10515,"follow_request_sent":false,"followers_count":391394,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Richard Quest","location":"Worldwide","profile_sidebar_fill_color":"DDEEF6","notifications":false},"favorited":false},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Fri Mar 23 10:01:30 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android<\/a>","retweeted_status":{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 18:13:39 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client<\/a>","retweet_count":7551,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976884625812480003","in_reply_to_user_id":null,"favorite_count":13889,"id":976884625812480003,"text":"Freedom of speech is not a joke: https://t.co/sHP6vUjjKQ","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":false,"entities":{"urls":[{"display_url":"youtu.be/ti2bVS40cz0","indices":[33,56],"expanded_url":"https://youtu.be/ti2bVS40cz0","url":"https://t.co/sHP6vUjjKQ"}],"hashtags":[],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":null,"friends_count":1516,"profile_image_url_https":"https://pbs.twimg.com/profile_images/869666257548783616/Ry_ZOQK6_normal.jpg","listed_count":550,"profile_background_image_url":"http://abs.twimg.com/images/themes/theme1/bg.png","default_profile_image":false,"favourites_count":1623,"description":"Jonathan Pie is a news reporter https://t.co/uRLQNd47cb \nWEBSITE: https://t.co/7imvu8Skjw \nall enquiries to paul@headwaytalent.co.uk","created_at":"Tue Oct 13 17:18:49 +0000 2015","is_translator":false,"profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme1/bg.png","protected":false,"screen_name":"JonathanPieNews","id_str":"3948308435","profile_link_color":"981CEB","is_translation_enabled":false,"translator_type":"none","id":3948308435,"geo_enabled":false,"profile_background_color":"000000","lang":"en-gb","has_extended_profile":false,"profile_sidebar_border_color":"000000","profile_text_color":"000000","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/869666257548783616/Ry_ZOQK6_normal.jpg","time_zone":null,"url":"https://t.co/LoL0tZwmw0","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/3948308435/1496179601","entities":{"description":{"urls":[{"display_url":"facebook.com/jonathanpierep\u2026","indices":[32,55],"expanded_url":"http://www.facebook.com/jonathanpiereporter","url":"https://t.co/uRLQNd47cb"},{"display_url":"jonathanpie.com","indices":[66,89],"expanded_url":"http://www.jonathanpie.com","url":"https://t.co/7imvu8Skjw"}]},"url":{"urls":[{"display_url":"youtube.com/jonathanpie","indices":[0,23],"expanded_url":"http://www.youtube.com/jonathanpie","url":"https://t.co/LoL0tZwmw0"}]}},"statuses_count":8741,"follow_request_sent":false,"followers_count":102747,"profile_use_background_image":false,"default_profile":false,"following":false,"name":"Jonathan Pie","location":"London, England","profile_sidebar_fill_color":"000000","notifications":false}},"retweet_count":7551,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"977123163782791173","in_reply_to_user_id":null,"favorite_count":0,"id":977123163782791173,"text":"RT @JonathanPieNews: Freedom of speech is not a joke: https://t.co/sHP6vUjjKQ","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":false,"entities":{"urls":[{"display_url":"youtu.be/ti2bVS40cz0","indices":[54,77],"expanded_url":"https://youtu.be/ti2bVS40cz0","url":"https://t.co/sHP6vUjjKQ"}],"hashtags":[],"user_mentions":[{"indices":[3,19],"screen_name":"JonathanPieNews","id_str":"3948308435","name":"Jonathan Pie","id":3948308435}],"symbols":[]},"contributors":null,"user":{"utc_offset":-14400,"friends_count":450,"profile_image_url_https":"https://pbs.twimg.com/profile_images/434306165225181185/wDBmpxIV_normal.jpeg","listed_count":6,"profile_background_image_url":"http://abs.twimg.com/images/themes/theme1/bg.png","default_profile_image":false,"favourites_count":758,"description":"","created_at":"Fri Mar 07 13:39:47 +0000 2008","is_translator":false,"profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme1/bg.png","protected":false,"screen_name":"pranshus","id_str":"14094935","profile_link_color":"1DA1F2","is_translation_enabled":false,"translator_type":"none","id":14094935,"geo_enabled":false,"profile_background_color":"C0DEED","lang":"en","has_extended_profile":true,"profile_sidebar_border_color":"C0DEED","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/434306165225181185/wDBmpxIV_normal.jpeg","time_zone":"Eastern Time (US & Canada)","url":null,"contributors_enabled":false,"profile_background_tile":false,"entities":{"description":{"urls":[]}},"statuses_count":1026,"follow_request_sent":false,"followers_count":248,"profile_use_background_image":true,"default_profile":true,"following":true,"name":"pranshus","location":"Mumbai, Maharashtra","profile_sidebar_fill_color":"DDEEF6","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Fri Mar 23 10:00:55 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.google.com/\" rel=\"nofollow\">Google<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"977123015233171457","in_reply_to_user_id":null,"favorite_count":0,"id":977123015233171457,"text":"I liked a @YouTube video https://t.co/SisIqthc3v It's a JOKE!","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":false,"entities":{"urls":[{"display_url":"youtu.be/ti2bVS40cz0?a","indices":[25,48],"expanded_url":"http://youtu.be/ti2bVS40cz0?a","url":"https://t.co/SisIqthc3v"}],"hashtags":[],"user_mentions":[{"indices":[10,18],"screen_name":"YouTube","id_str":"10228272","name":"YouTube","id":10228272}],"symbols":[]},"contributors":null,"user":{"utc_offset":-14400,"friends_count":450,"profile_image_url_https":"https://pbs.twimg.com/profile_images/434306165225181185/wDBmpxIV_normal.jpeg","listed_count":6,"profile_background_image_url":"http://abs.twimg.com/images/themes/theme1/bg.png","default_profile_image":false,"favourites_count":758,"description":"","created_at":"Fri Mar 07 13:39:47 +0000 2008","is_translator":false,"profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme1/bg.png","protected":false,"screen_name":"pranshus","id_str":"14094935","profile_link_color":"1DA1F2","is_translation_enabled":false,"translator_type":"none","id":14094935,"geo_enabled":false,"profile_background_color":"C0DEED","lang":"en","has_extended_profile":true,"profile_sidebar_border_color":"C0DEED","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/434306165225181185/wDBmpxIV_normal.jpeg","time_zone":"Eastern Time (US & Canada)","url":null,"contributors_enabled":false,"profile_background_tile":false,"entities":{"description":{"urls":[]}},"statuses_count":1026,"follow_request_sent":false,"followers_count":248,"profile_use_background_image":true,"default_profile":true,"following":true,"name":"pranshus","location":"Mumbai, Maharashtra","profile_sidebar_fill_color":"DDEEF6","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 13:45:34 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":3,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976817160612990976","in_reply_to_user_id":null,"favorite_count":7,"id":976817160612990976,"text":"#DSIJ Dilip Buildcon bags EPC project worth Rs. 677 crore by NHAI - EPC major Dilip Buildcon announced on Thursday\u2026 https://t.co/bVEmDqEpK1","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[116,139],"expanded_url":"https://twitter.com/i/web/status/976817160612990976","url":"https://t.co/bVEmDqEpK1"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 13:45:34 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976817160302551041","in_reply_to_user_id":null,"favorite_count":0,"id":976817160302551041,"text":"#DSIJ Overnight Digest: Stocks to look out for on March 23 - The stocks that are likely to witness significant move\u2026 https://t.co/wK5Qdzwd0o","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[117,140],"expanded_url":"https://twitter.com/i/web/status/976817160302551041","url":"https://t.co/wK5Qdzwd0o"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 12:47:01 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976802428027920385","in_reply_to_user_id":null,"favorite_count":1,"id":976802428027920385,"text":"#DSIJ How Fed rate hike will impact India - US Federal Reserve hikes interest rate for the fourth time in a year, l\u2026 https://t.co/vPhmtVBVDl","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[117,140],"expanded_url":"https://twitter.com/i/web/status/976802428027920385","url":"https://t.co/vPhmtVBVDl"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 12:47:01 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976802427906215936","in_reply_to_user_id":null,"favorite_count":1,"id":976802427906215936,"text":"#DSIJ What triggered the reduction of inflows to Balanced Funds? - As per the data from AMFI, since December 2017,\u2026 https://t.co/GS5J0BbObq","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[116,139],"expanded_url":"https://twitter.com/i/web/status/976802427906215936","url":"https://t.co/GS5J0BbObq"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 12:02:39 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.google.com/\" rel=\"nofollow\">Google<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976791263193296898","in_reply_to_user_id":null,"favorite_count":0,"id":976791263193296898,"text":"I liked a @YouTube video https://t.co/yxyoCgC24F For the undying 9/11 MORONIC JET FUEL ARGUMENT","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":false,"entities":{"urls":[{"display_url":"youtu.be/FzF1KySHmUA?a","indices":[25,48],"expanded_url":"http://youtu.be/FzF1KySHmUA?a","url":"https://t.co/yxyoCgC24F"}],"hashtags":[],"user_mentions":[{"indices":[10,18],"screen_name":"YouTube","id_str":"10228272","name":"YouTube","id":10228272}],"symbols":[]},"contributors":null,"user":{"utc_offset":-14400,"friends_count":450,"profile_image_url_https":"https://pbs.twimg.com/profile_images/434306165225181185/wDBmpxIV_normal.jpeg","listed_count":6,"profile_background_image_url":"http://abs.twimg.com/images/themes/theme1/bg.png","default_profile_image":false,"favourites_count":758,"description":"","created_at":"Fri Mar 07 13:39:47 +0000 2008","is_translator":false,"profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme1/bg.png","protected":false,"screen_name":"pranshus","id_str":"14094935","profile_link_color":"1DA1F2","is_translation_enabled":false,"translator_type":"none","id":14094935,"geo_enabled":false,"profile_background_color":"C0DEED","lang":"en","has_extended_profile":true,"profile_sidebar_border_color":"C0DEED","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/434306165225181185/wDBmpxIV_normal.jpeg","time_zone":"Eastern Time (US & Canada)","url":null,"contributors_enabled":false,"profile_background_tile":false,"entities":{"description":{"urls":[]}},"statuses_count":1026,"follow_request_sent":false,"followers_count":248,"profile_use_background_image":true,"default_profile":true,"following":true,"name":"pranshus","location":"Mumbai, Maharashtra","profile_sidebar_fill_color":"DDEEF6","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 11:45:48 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976787021330034689","in_reply_to_user_id":null,"favorite_count":1,"id":976787021330034689,"text":"#DSIJ Mishra Dhatu IPO subscribed 63 per cent on Day 2 - Defence PSU company Mishra Dhatu Nigam Limited's IPO was s\u2026 https://t.co/GB8ST5PnfG","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[117,140],"expanded_url":"https://twitter.com/i/web/status/976787021330034689","url":"https://t.co/GB8ST5PnfG"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 10:45:48 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976771923135877120","in_reply_to_user_id":null,"favorite_count":0,"id":976771923135877120,"text":"#DSIJ Ten stocks close to their 52-week low - Following stocks are close to their 52-week low as at 2.40 p.m. on Ma\u2026 https://t.co/cVimFILN8q","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[117,140],"expanded_url":"https://twitter.com/i/web/status/976771923135877120","url":"https://t.co/cVimFILN8q"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 09:45:38 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976756781115498498","in_reply_to_user_id":null,"favorite_count":1,"id":976756781115498498,"text":"#DSIJ Ten stocks close to their 52-week high - The markets on March 22, 2018 opened flat. BSE Sensex is trading at\u2026 https://t.co/OBtXqvXfSO","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[116,139],"expanded_url":"https://twitter.com/i/web/status/976756781115498498","url":"https://t.co/OBtXqvXfSO"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 09:45:38 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976756780968628224","in_reply_to_user_id":null,"favorite_count":2,"id":976756780968628224,"text":"#DSIJ SME IPO: SS Infrastructure to launch IPO on March 28 - Engineering and architectural consultancy SS Infrastru\u2026 https://t.co/gFrsDZIX5Q","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[117,140],"expanded_url":"https://twitter.com/i/web/status/976756780968628224","url":"https://t.co/gFrsDZIX5Q"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}},{"possibly_sensitive_appealable":false,"extended_entities":{"media":[{"display_url":"pic.twitter.com/p5QqXgjVPt","source_user_id":244235110,"type":"photo","media_url":"http://pbs.twimg.com/media/DYx4ZFYU0AAe9RH.jpg","source_status_id":976287598070054912,"url":"https://t.co/p5QqXgjVPt","indices":[97,120],"sizes":{"small":{"w":382,"h":680,"resize":"fit"},"large":{"w":750,"h":1334,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":675,"h":1200,"resize":"fit"}},"id_str":"976287591568822272","expanded_url":"https://twitter.com/lyss121/status/976287598070054912/photo/1","source_status_id_str":"976287598070054912","media_url_https":"https://pbs.twimg.com/media/DYx4ZFYU0AAe9RH.jpg","id":976287591568822272,"source_user_id_str":"244235110"}]},"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 09:14:23 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android<\/a>","retweeted_status":{"possibly_sensitive_appealable":false,"extended_entities":{"media":[{"display_url":"pic.twitter.com/p5QqXgjVPt","indices":[84,107],"sizes":{"small":{"w":382,"h":680,"resize":"fit"},"large":{"w":750,"h":1334,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":675,"h":1200,"resize":"fit"}},"id_str":"976287591568822272","expanded_url":"https://twitter.com/lyss121/status/976287598070054912/photo/1","media_url_https":"https://pbs.twimg.com/media/DYx4ZFYU0AAe9RH.jpg","id":976287591568822272,"type":"photo","media_url":"http://pbs.twimg.com/media/DYx4ZFYU0AAe9RH.jpg","url":"https://t.co/p5QqXgjVPt"}]},"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Wed Mar 21 02:41:16 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone<\/a>","retweet_count":400530,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976287598070054912","in_reply_to_user_id":null,"favorite_count":1256774,"id":976287598070054912,"text":"My sister snapped me this, but I feel like it deserves to be seen by so many more ? https://t.co/p5QqXgjVPt","place":{"country_code":"US","country":"United States","contained_within":[],"full_name":"Fresno, CA","bounding_box":{"coordinates":[[[-119.93251,36.648905],[-119.632419,36.648905],[-119.632419,36.923179],[-119.93251,36.923179]]],"type":"Polygon"},"place_type":"city","name":"Fresno","attributes":{},"id":"944c03c1d85ef480","url":"https://api.twitter.com/1.1/geo/id/944c03c1d85ef480.json"},"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":false,"entities":{"urls":[],"hashtags":[],"media":[{"display_url":"pic.twitter.com/p5QqXgjVPt","indices":[84,107],"sizes":{"small":{"w":382,"h":680,"resize":"fit"},"large":{"w":750,"h":1334,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":675,"h":1200,"resize":"fit"}},"id_str":"976287591568822272","expanded_url":"https://twitter.com/lyss121/status/976287598070054912/photo/1","media_url_https":"https://pbs.twimg.com/media/DYx4ZFYU0AAe9RH.jpg","id":976287591568822272,"type":"photo","media_url":"http://pbs.twimg.com/media/DYx4ZFYU0AAe9RH.jpg","url":"https://t.co/p5QqXgjVPt"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":-28800,"friends_count":517,"profile_image_url_https":"https://pbs.twimg.com/profile_images/976508538292809728/FA3qwH8-_normal.jpg","listed_count":166,"profile_background_image_url":"http://abs.twimg.com/images/themes/theme19/bg.gif","default_profile_image":false,"favourites_count":3568,"description":"4.98 Uber Driver|||??","created_at":"Fri Jan 28 21:10:52 +0000 2011","is_translator":false,"profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme19/bg.gif","protected":false,"screen_name":"lyss121","id_str":"244235110","profile_link_color":"0099CC","is_translation_enabled":false,"translator_type":"none","id":244235110,"geo_enabled":true,"profile_background_color":"FFF04D","lang":"en","has_extended_profile":true,"profile_sidebar_border_color":"FFF8AD","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/976508538292809728/FA3qwH8-_normal.jpg","time_zone":"Alaska","url":null,"contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/244235110/1521652872","entities":{"description":{"urls":[]}},"statuses_count":15467,"follow_request_sent":false,"followers_count":1918,"profile_use_background_image":true,"default_profile":false,"following":false,"name":"Alyssa","location":"somewhere on a beach","profile_sidebar_fill_color":"F6FFD1","notifications":false}},"retweet_count":400530,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976748916556345344","in_reply_to_user_id":null,"favorite_count":0,"id":976748916556345344,"text":"RT @lyss121: My sister snapped me this, but I feel like it deserves to be seen by so many more ? https://t.co/p5QqXgjVPt","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":false,"entities":{"urls":[],"hashtags":[],"media":[{"display_url":"pic.twitter.com/p5QqXgjVPt","source_user_id":244235110,"type":"photo","media_url":"http://pbs.twimg.com/media/DYx4ZFYU0AAe9RH.jpg","source_status_id":976287598070054912,"url":"https://t.co/p5QqXgjVPt","indices":[97,120],"sizes":{"small":{"w":382,"h":680,"resize":"fit"},"large":{"w":750,"h":1334,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":675,"h":1200,"resize":"fit"}},"id_str":"976287591568822272","expanded_url":"https://twitter.com/lyss121/status/976287598070054912/photo/1","source_status_id_str":"976287598070054912","media_url_https":"https://pbs.twimg.com/media/DYx4ZFYU0AAe9RH.jpg","id":976287591568822272,"source_user_id_str":"244235110"}],"user_mentions":[{"indices":[3,11],"screen_name":"lyss121","id_str":"244235110","name":"Alyssa","id":244235110}],"symbols":[]},"contributors":null,"user":{"utc_offset":-14400,"friends_count":450,"profile_image_url_https":"https://pbs.twimg.com/profile_images/434306165225181185/wDBmpxIV_normal.jpeg","listed_count":6,"profile_background_image_url":"http://abs.twimg.com/images/themes/theme1/bg.png","default_profile_image":false,"favourites_count":758,"description":"","created_at":"Fri Mar 07 13:39:47 +0000 2008","is_translator":false,"profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme1/bg.png","protected":false,"screen_name":"pranshus","id_str":"14094935","profile_link_color":"1DA1F2","is_translation_enabled":false,"translator_type":"none","id":14094935,"geo_enabled":false,"profile_background_color":"C0DEED","lang":"en","has_extended_profile":true,"profile_sidebar_border_color":"C0DEED","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/434306165225181185/wDBmpxIV_normal.jpeg","time_zone":"Eastern Time (US & Canada)","url":null,"contributors_enabled":false,"profile_background_tile":false,"entities":{"description":{"urls":[]}},"statuses_count":1026,"follow_request_sent":false,"followers_count":248,"profile_use_background_image":true,"default_profile":true,"following":true,"name":"pranshus","location":"Mumbai, Maharashtra","profile_sidebar_fill_color":"DDEEF6","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 07:45:30 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976726549570482176","in_reply_to_user_id":null,"favorite_count":1,"id":976726549570482176,"text":"#DSIJ Suven Life Sciences secures product patents in Norway, S Korea and Singapore - Suven Life Sciences secured pr\u2026 https://t.co/bCD98LZui1","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[117,140],"expanded_url":"https://twitter.com/i/web/status/976726549570482176","url":"https://t.co/bCD98LZui1"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 07:45:30 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976726549239160832","in_reply_to_user_id":null,"favorite_count":0,"id":976726549239160832,"text":"#DSIJ Zensar to acquire Cynosure for US$33million - Zensar, an RPG company, is on the move to acquire the US-based\u2026 https://t.co/MUEReliFxL","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[116,139],"expanded_url":"https://twitter.com/i/web/status/976726549239160832","url":"https://t.co/MUEReliFxL"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}},{"possibly_sensitive_appealable":false,"in_reply_to_status_id_str":null,"in_reply_to_status_id":null,"created_at":"Thu Mar 22 06:45:56 +0000 2018","in_reply_to_user_id_str":null,"source":"<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite<\/a>","retweet_count":0,"retweeted":false,"geo":null,"in_reply_to_screen_name":null,"is_quote_status":false,"id_str":"976711559299895296","in_reply_to_user_id":null,"favorite_count":0,"id":976711559299895296,"text":"#DSIJ Indigo, Qatar Airways rubbish news of buying Air India - Market was buzzing with a possible tie-up between do\u2026 https://t.co/bbrdnIOU5Q","place":null,"lang":"en","favorited":false,"possibly_sensitive":false,"coordinates":null,"truncated":true,"entities":{"urls":[{"display_url":"twitter.com/i/web/status/9\u2026","indices":[117,140],"expanded_url":"https://twitter.com/i/web/status/976711559299895296","url":"https://t.co/bbrdnIOU5Q"}],"hashtags":[{"indices":[0,5],"text":"DSIJ"}],"user_mentions":[],"symbols":[]},"contributors":null,"user":{"utc_offset":19800,"friends_count":242,"profile_image_url_https":"https://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","listed_count":131,"profile_background_image_url":"http://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","default_profile_image":false,"favourites_count":977,"description":"Dalal Street Investment Journal is India\u2019s No. 1 Equity Investment Magazine, since 1986.  Join us for recommendations that book Profit.","created_at":"Thu Apr 23 11:38:28 +0000 2009","is_translator":false,"profile_background_image_url_https":"https://pbs.twimg.com/profile_background_images/378800000153970770/f6pjHjry.jpeg","protected":false,"screen_name":"DSIJ","id_str":"34589718","profile_link_color":"05990F","is_translation_enabled":false,"translator_type":"none","id":34589718,"geo_enabled":false,"profile_background_color":"14AD7F","lang":"en","has_extended_profile":false,"profile_sidebar_border_color":"FFFFFF","profile_text_color":"333333","verified":false,"profile_image_url":"http://pbs.twimg.com/profile_images/615860379135029249/y7Zd1CO8_normal.jpg","time_zone":"New Delhi","url":"http://t.co/bnKGsDUpsX","contributors_enabled":false,"profile_background_tile":false,"profile_banner_url":"https://pbs.twimg.com/profile_banners/34589718/1519909321","entities":{"description":{"urls":[]},"url":{"urls":[{"display_url":"dsij.in","indices":[0,22],"expanded_url":"http://www.dsij.in","url":"http://t.co/bnKGsDUpsX"}]}},"statuses_count":19492,"follow_request_sent":false,"followers_count":8108,"profile_use_background_image":true,"default_profile":false,"following":true,"name":"Dalal Street Journal","location":"India","profile_sidebar_fill_color":"E6F4FA","notifications":false}}]
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Met some new friends today https://t.co/8kXXaDG7eL
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : So @Qantas is doing huge amounts of research into wellness on Ultra long haul.
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Being kinder to our bodies and eating better before these ultra long hails is important to feel well during and after flight.
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : The flight is 17 hrs. Just doing a stretch class they provide in the lounge
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Now at Perth airport about to board QF 9 @Qantas nonstop to London. first a stretching and yoga class to help us relax!
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : RT @JonathanPieNews: Freedom of speech is not a joke: https://t.co/sHP6vUjjKQ
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : I liked a @YouTube video https://t.co/SisIqthc3v It's a JOKE!
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Dilip Buildcon bags EPC project worth Rs. 677 crore by NHAI - EPC major Dilip Buildcon announced on Thursday… https://t.co/bVEmDqEpK1
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Overnight Digest: Stocks to look out for on March 23 - The stocks that are likely to witness significant move… https://t.co/wK5Qdzwd0o
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ How Fed rate hike will impact India - US Federal Reserve hikes interest rate for the fourth time in a year, l… https://t.co/vPhmtVBVDl
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ What triggered the reduction of inflows to Balanced Funds? - As per the data from AMFI, since December 2017,… https://t.co/GS5J0BbObq
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : I liked a @YouTube video https://t.co/yxyoCgC24F For the undying 9/11 MORONIC JET FUEL ARGUMENT
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Mishra Dhatu IPO subscribed 63 per cent on Day 2 - Defence PSU company Mishra Dhatu Nigam Limited's IPO was s… https://t.co/GB8ST5PnfG
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Ten stocks close to their 52-week low - Following stocks are close to their 52-week low as at 2.40 p.m. on Ma… https://t.co/cVimFILN8q
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Ten stocks close to their 52-week high - The markets on March 22, 2018 opened flat. BSE Sensex is trading at… https://t.co/OBtXqvXfSO
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ SME IPO: SS Infrastructure to launch IPO on March 28 - Engineering and architectural consultancy SS Infrastru… https://t.co/gFrsDZIX5Q
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : RT @lyss121: My sister snapped me this, but I feel like it deserves to be seen by so many more ? https://t.co/p5QqXgjVPt
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Suven Life Sciences secures product patents in Norway, S Korea and Singapore - Suven Life Sciences secured pr… https://t.co/bCD98LZui1
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Zensar to acquire Cynosure for US$33million - Zensar, an RPG company, is on the move to acquire the US-based… https://t.co/MUEReliFxL
+2018-03-24 15:00:26.100  INFO 22596 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Indigo, Qatar Airways rubbish news of buying Air India - Market was buzzing with a possible tie-up between do… https://t.co/bbrdnIOU5Q
+2018-03-24 15:00:26.132  INFO 22596 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6e286e0d: startup date [Sat Mar 24 15:00:22 IST 2018]; root of context hierarchy
+2018-03-24 15:00:26.132 DEBUG 22596 --- [Thread-3] o.s.b.f.s.DefaultListableBeanFactory     : Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-03-24 15:00:26.147 DEBUG 22596 --- [Thread-3] o.s.b.f.s.DefaultListableBeanFactory     : Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a78590e: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,springbootTwitter4jDemoApplication,org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory,org.springframework.boot.autoconfigure.AutoConfigurationPackages,org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration,org.springframework.boot.autoconfigure.condition.BeanTypeRegistry,propertySourcesPlaceholderConfigurer,com.rxmeena.spring.boot.autoconfigure.Twitter4jAutoConfiguration,twitterFactory,twitter,twitter4j-com.rxmeena.spring.boot.autoconfigure.Twitter4jProperties,org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor,org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata,org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration,mbeanExporter,objectNamingStrategy,mbeanServer,org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration,org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration,spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties,org.springframework.boot.autoconfigure.security.reactive.ReactiveSecurityAutoConfiguration,spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties,org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration,server-org.springframework.boot.autoconfigure.web.ServerProperties]; root of factory hierarchy
+2018-03-24 15:00:26.149 DEBUG 22596 --- [Thread-3] o.s.b.f.support.DisposableBeanAdapter    : Invoking destroy() on bean with name 'mbeanExporter'
+2018-03-24 15:00:26.150  INFO 22596 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-24 15:00:26.152 DEBUG 22596 --- [Thread-3] o.s.b.f.s.DefaultListableBeanFactory     : Retrieved dependent beans for bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory': [org.springframework.context.annotation.internalConfigurationAnnotationProcessor]
+2018-03-24 15:03:11.711  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Starting SpringbootTwitter4jDemoApplication on 5CG7242Q9L with PID 9848 (C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample\target\classes started by rxmeena in C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample)
+2018-03-24 15:03:11.716  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : The following profiles are active: test
+2018-03-24 15:03:11.747  INFO 9848 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4a90e669: startup date [Sat Mar 24 15:03:11 IST 2018]; root of context hierarchy
+2018-03-24 15:03:12.603  INFO 9848 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 15:03:12.618  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Started SpringbootTwitter4jDemoApplication in 1.669 seconds (JVM running for 21.365)
+2018-03-24 15:03:12.618  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Get home timeline
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Met some new friends today https://t.co/8kXXaDG7eL
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : So @Qantas is doing huge amounts of research into wellness on Ultra long haul.
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Being kinder to our bodies and eating better before these ultra long hails is important to feel well during and after flight.
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : The flight is 17 hrs. Just doing a stretch class they provide in the lounge
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Now at Perth airport about to board QF 9 @Qantas nonstop to London. first a stretching and yoga class to help us relax!
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : RT @JonathanPieNews: Freedom of speech is not a joke: https://t.co/sHP6vUjjKQ
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : I liked a @YouTube video https://t.co/SisIqthc3v It's a JOKE!
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Thread on technical details of F.B/C.A controversy https://t.co/Q0Ignd4PV1
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Dilip Buildcon bags EPC project worth Rs. 677 crore by NHAI - EPC major Dilip Buildcon announced on Thursday… https://t.co/bVEmDqEpK1
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Overnight Digest: Stocks to look out for on March 23 - The stocks that are likely to witness significant move… https://t.co/wK5Qdzwd0o
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ How Fed rate hike will impact India - US Federal Reserve hikes interest rate for the fourth time in a year, l… https://t.co/vPhmtVBVDl
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ What triggered the reduction of inflows to Balanced Funds? - As per the data from AMFI, since December 2017,… https://t.co/GS5J0BbObq
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : I liked a @YouTube video https://t.co/yxyoCgC24F For the undying 9/11 MORONIC JET FUEL ARGUMENT
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Mishra Dhatu IPO subscribed 63 per cent on Day 2 - Defence PSU company Mishra Dhatu Nigam Limited's IPO was s… https://t.co/GB8ST5PnfG
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Ten stocks close to their 52-week low - Following stocks are close to their 52-week low as at 2.40 p.m. on Ma… https://t.co/cVimFILN8q
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Ten stocks close to their 52-week high - The markets on March 22, 2018 opened flat. BSE Sensex is trading at… https://t.co/OBtXqvXfSO
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ SME IPO: SS Infrastructure to launch IPO on March 28 - Engineering and architectural consultancy SS Infrastru… https://t.co/gFrsDZIX5Q
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : RT @lyss121: My sister snapped me this, but I feel like it deserves to be seen by so many more ? https://t.co/p5QqXgjVPt
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Suven Life Sciences secures product patents in Norway, S Korea and Singapore - Suven Life Sciences secured pr… https://t.co/bCD98LZui1
+2018-03-24 15:03:14.498  INFO 9848 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Zensar to acquire Cynosure for US$33million - Zensar, an RPG company, is on the move to acquire the US-based… https://t.co/MUEReliFxL
+2018-03-24 15:03:14.529  INFO 9848 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4a90e669: startup date [Sat Mar 24 15:03:11 IST 2018]; root of context hierarchy
+2018-03-24 15:03:14.529  INFO 9848 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-24 15:06:11.632  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Starting SpringbootTwitter4jDemoApplication on 5CG7242Q9L with PID 24380 (C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample\target\classes started by rxmeena in C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample)
+2018-03-24 15:06:11.632  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : The following profiles are active: dev
+2018-03-24 15:06:11.677  INFO 24380 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26d3ee1f: startup date [Sat Mar 24 15:06:11 IST 2018]; root of context hierarchy
+2018-03-24 15:06:12.608  INFO 24380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 15:06:12.623  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Started SpringbootTwitter4jDemoApplication in 1.609 seconds (JVM running for 21.384)
+2018-03-24 15:06:12.623  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Get home timeline
+2018-03-24 15:06:14.449  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Met some new friends today https://t.co/8kXXaDG7eL
+2018-03-24 15:06:14.449  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : So @Qantas is doing huge amounts of research into wellness on Ultra long haul.
+2018-03-24 15:06:14.449  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Being kinder to our bodies and eating better before these ultra long hails is important to feel well during and after flight.
+2018-03-24 15:06:14.449  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : The flight is 17 hrs. Just doing a stretch class they provide in the lounge
+2018-03-24 15:06:14.449  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Now at Perth airport about to board QF 9 @Qantas nonstop to London. first a stretching and yoga class to help us relax!
+2018-03-24 15:06:14.449  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : RT @JonathanPieNews: Freedom of speech is not a joke: https://t.co/sHP6vUjjKQ
+2018-03-24 15:06:14.449  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : I liked a @YouTube video https://t.co/SisIqthc3v It's a JOKE!
+2018-03-24 15:06:14.449  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Dilip Buildcon bags EPC project worth Rs. 677 crore by NHAI - EPC major Dilip Buildcon announced on Thursday… https://t.co/bVEmDqEpK1
+2018-03-24 15:06:14.449  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Overnight Digest: Stocks to look out for on March 23 - The stocks that are likely to witness significant move… https://t.co/wK5Qdzwd0o
+2018-03-24 15:06:14.465  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ How Fed rate hike will impact India - US Federal Reserve hikes interest rate for the fourth time in a year, l… https://t.co/vPhmtVBVDl
+2018-03-24 15:06:14.466  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ What triggered the reduction of inflows to Balanced Funds? - As per the data from AMFI, since December 2017,… https://t.co/GS5J0BbObq
+2018-03-24 15:06:14.466  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : I liked a @YouTube video https://t.co/yxyoCgC24F For the undying 9/11 MORONIC JET FUEL ARGUMENT
+2018-03-24 15:06:14.466  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Mishra Dhatu IPO subscribed 63 per cent on Day 2 - Defence PSU company Mishra Dhatu Nigam Limited's IPO was s… https://t.co/GB8ST5PnfG
+2018-03-24 15:06:14.466  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Ten stocks close to their 52-week low - Following stocks are close to their 52-week low as at 2.40 p.m. on Ma… https://t.co/cVimFILN8q
+2018-03-24 15:06:14.468  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Ten stocks close to their 52-week high - The markets on March 22, 2018 opened flat. BSE Sensex is trading at… https://t.co/OBtXqvXfSO
+2018-03-24 15:06:14.468  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ SME IPO: SS Infrastructure to launch IPO on March 28 - Engineering and architectural consultancy SS Infrastru… https://t.co/gFrsDZIX5Q
+2018-03-24 15:06:14.468  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : RT @lyss121: My sister snapped me this, but I feel like it deserves to be seen by so many more ? https://t.co/p5QqXgjVPt
+2018-03-24 15:06:14.472  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Suven Life Sciences secures product patents in Norway, S Korea and Singapore - Suven Life Sciences secured pr… https://t.co/bCD98LZui1
+2018-03-24 15:06:14.473  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Zensar to acquire Cynosure for US$33million - Zensar, an RPG company, is on the move to acquire the US-based… https://t.co/MUEReliFxL
+2018-03-24 15:06:14.474  INFO 24380 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Indigo, Qatar Airways rubbish news of buying Air India - Market was buzzing with a possible tie-up between do… https://t.co/bbrdnIOU5Q
+2018-03-24 15:06:14.482  INFO 24380 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26d3ee1f: startup date [Sat Mar 24 15:06:11 IST 2018]; root of context hierarchy
+2018-03-24 15:06:14.498  INFO 24380 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-24 15:13:04.116  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Starting SpringbootTwitter4jDemoApplication on 5CG7242Q9L with PID 20972 (C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample\target\classes started by rxmeena in C:\Users\rxmeena\workspace\SBTraining\sb-autocfg-demo\twitter4j-spring-boot-sample)
+2018-03-24 15:13:04.132  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : The following profiles are active: dev,test
+2018-03-24 15:13:04.174  INFO 20972 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3c2c50e5: startup date [Sat Mar 24 15:13:04 IST 2018]; root of context hierarchy
+2018-03-24 15:13:05.029  INFO 20972 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 15:13:05.045  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Started SpringbootTwitter4jDemoApplication in 1.736 seconds (JVM running for 21.443)
+2018-03-24 15:13:05.045  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Get home timeline
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Met some new friends today https://t.co/8kXXaDG7eL
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : So @Qantas is doing huge amounts of research into wellness on Ultra long haul.
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Being kinder to our bodies and eating better before these ultra long hails is important to feel well during and after flight.
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : The flight is 17 hrs. Just doing a stretch class they provide in the lounge
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : Now at Perth airport about to board QF 9 @Qantas nonstop to London. first a stretching and yoga class to help us relax!
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : RT @JonathanPieNews: Freedom of speech is not a joke: https://t.co/sHP6vUjjKQ
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : I liked a @YouTube video https://t.co/SisIqthc3v It's a JOKE!
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Dilip Buildcon bags EPC project worth Rs. 677 crore by NHAI - EPC major Dilip Buildcon announced on Thursday… https://t.co/bVEmDqEpK1
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Overnight Digest: Stocks to look out for on March 23 - The stocks that are likely to witness significant move… https://t.co/wK5Qdzwd0o
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ How Fed rate hike will impact India - US Federal Reserve hikes interest rate for the fourth time in a year, l… https://t.co/vPhmtVBVDl
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ What triggered the reduction of inflows to Balanced Funds? - As per the data from AMFI, since December 2017,… https://t.co/GS5J0BbObq
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : I liked a @YouTube video https://t.co/yxyoCgC24F For the undying 9/11 MORONIC JET FUEL ARGUMENT
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Mishra Dhatu IPO subscribed 63 per cent on Day 2 - Defence PSU company Mishra Dhatu Nigam Limited's IPO was s… https://t.co/GB8ST5PnfG
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Ten stocks close to their 52-week low - Following stocks are close to their 52-week low as at 2.40 p.m. on Ma… https://t.co/cVimFILN8q
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Ten stocks close to their 52-week high - The markets on March 22, 2018 opened flat. BSE Sensex is trading at… https://t.co/OBtXqvXfSO
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ SME IPO: SS Infrastructure to launch IPO on March 28 - Engineering and architectural consultancy SS Infrastru… https://t.co/gFrsDZIX5Q
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : RT @lyss121: My sister snapped me this, but I feel like it deserves to be seen by so many more ? https://t.co/p5QqXgjVPt
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Suven Life Sciences secures product patents in Norway, S Korea and Singapore - Suven Life Sciences secured pr… https://t.co/bCD98LZui1
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Zensar to acquire Cynosure for US$33million - Zensar, an RPG company, is on the move to acquire the US-based… https://t.co/MUEReliFxL
+2018-03-24 15:13:06.918  INFO 20972 --- [main] c.r.d.SpringbootTwitter4jDemoApplication : #DSIJ Indigo, Qatar Airways rubbish news of buying Air India - Market was buzzing with a possible tie-up between do… https://t.co/bbrdnIOU5Q
+2018-03-24 15:13:06.934  INFO 20972 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3c2c50e5: startup date [Sat Mar 24 15:13:04 IST 2018]; root of context hierarchy
+2018-03-24 15:13:06.934  INFO 20972 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
